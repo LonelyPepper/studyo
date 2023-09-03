@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 
 function Header({ title }) {
@@ -21,7 +23,7 @@ export default function HomePage() {
         ))}
       </ul>
 
-      <button onClick={handleClick}>Like ({likes})</button>
+      <button class="bg-red padding-4" onClick={handleClick}>Like ({likes})</button>
     </div>
   );
 }
